@@ -1,4 +1,4 @@
-varriable "domain" {
+variable "domain" {
 default = "tf-test"
 }
 
