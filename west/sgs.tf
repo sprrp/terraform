@@ -1,4 +1,4 @@
-data "aws_vpc" "default: {}
+data "aws_vpc" "default" {}
 
 resource "aws_security_group" "default" {
   name        = "surendra-sg"
