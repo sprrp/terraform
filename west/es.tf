@@ -47,6 +47,10 @@ CONFIG
   snapshot_options {
     automated_snapshot_start_hour = 23
   }
+ebs_options {
+    ebs_enabled = true
+    volume_size = 10
+  }
 
   tags = {
     Domain = "TestDomain"
