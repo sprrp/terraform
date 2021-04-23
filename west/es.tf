@@ -50,9 +50,8 @@ CONFIG
     volume_size = 10
   }
   tags = {
-Domain = "TestDomain"
+    Domain = "TestDomain"
   }
 
   depends_on = [aws_iam_service_linked_role.es]
 }
-
