@@ -1,9 +1,11 @@
-data "aws_vpc" "default" {}
+data "aws_vpc" "default" {
+
+}
 
 resource "aws_security_group" "default" {
   name        = "surendra-sg"
   description = "Allow TLS inbound traffic"
-  vpc_id      = aws_vpc.default.id
+  vpc_id      = data.aws_vpc.default.id
 
   ingress {
     description      = "TLS from VPC"
