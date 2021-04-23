@@ -1,7 +1,7 @@
 data "aws_vpc" "default" {}
 
 resource "aws_security_group" "default" {
-  name        = "default"
+  name        = "surendra-west"
   description = "Allow TLS inbound traffic"
   vpc_id      = "${data.aws_vpc.default.id}"
 
@@ -24,4 +24,3 @@ resource "aws_security_group" "default" {
     Name = "allow_tls"
   }
 }
-
