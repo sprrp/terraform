@@ -23,7 +23,7 @@ resource "aws_elasticsearch_domain" "es" {
       data.aws_subnet_ids.default.ids[1],
     ]
 
-    security_group_ids = [aws_security_group.es.id]
+    security_group_ids = [aws_security_group.default.id]
   }
 
   advanced_options = {
