@@ -52,8 +52,7 @@ CONFIG
   tags = {
     Domain = "TestDomain"
   }
-  
-  create_iam_service_linked_role = false
+
 
   depends_on = [aws_iam_service_linked_role.default]
 }
