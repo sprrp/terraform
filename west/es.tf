@@ -9,7 +9,7 @@ data "aws_subnet" "default" {
   }
 }
 
-resource "aws_elasticsearch_domain" "ess" {
+resource "aws_elasticsearch_domain" "es" {
   domain_name           = var.domain
   elasticsearch_version = "7.9"
 
@@ -53,6 +53,6 @@ CONFIG
     Domain = "TestDomain"
   }
 
-  depends_on = [aws_iam_service_linked_role.ess]
+  depends_on = [aws_iam_service_linked_role.es]
 }
 
