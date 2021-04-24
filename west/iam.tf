@@ -1,3 +1,3 @@
-resource "aws_iam_service_linked_role" "ess" {
+resource "aws_iam_service_linked_role" "esst" {
  aws_service_name = "es.amazonaws.com"
 }
