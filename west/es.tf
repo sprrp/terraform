@@ -54,6 +54,6 @@ CONFIG
   }
 
 
-  depends_on = [aws_iam_service_linked_role.default]
+  depends_on = [aws_iam_service_linked_role.es]
 }
 
