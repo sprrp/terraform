@@ -53,6 +53,6 @@ CONFIG
     Domain = "TestDomain"
   }
 
-  depends_on = [aws_iam_service_linked_role.esst]
+  depends_on = [aws_iam_service_linked_role.default]
 }
 
