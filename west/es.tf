@@ -9,7 +9,7 @@ data "aws_subnet" "default" {
   }
 }
 
-resource "aws_elasticsearch_domain" "es" {
+resource "aws_elasticsearch_domain" "ess" {
   domain_name           = var.domain
   elasticsearch_version = "7.9"
 
